@@ -17,6 +17,15 @@ for ( let i = 0; i < alunos.length; i++ ) {
 
 console.log(aprovados)
 
+/* Resultado
+  [
+    { nome: 'Well', nota: 7.5 },
+    { nome: 'Raica', nota: 9.5 },
+    { nome: 'Wendell', nota: 8 },
+    { nome: 'Mary', nota: 10 }
+  ]
+*/
+
 
 console.log('/* Mesmo exemplo agora declarativo */')
 const alunos2 = [
@@ -32,3 +41,12 @@ const alunos2 = [
 const estaAprovado = aluno => aluno.nota >= 7
 const aprovados2 = alunos2.filter(estaAprovado)
 console.log(aprovados2)
+
+/* Resultado
+  [
+    { nome: 'Well', nota: 7.5 },
+    { nome: 'Raica', nota: 9.5 },
+    { nome: 'Wendell', nota: 8 },
+    { nome: 'Mary', nota: 10 }
+  ]
+*/
